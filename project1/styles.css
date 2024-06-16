@@ -1,0 +1,127 @@
+body{
+	background:linear-gradient(135deg,#153677,#4e085f);
+}
+a{  color:white;
+	display:inline-flex;
+	flex-wrap: wrap;
+	padding-top:12px;font-size:20px;
+    padding-inline: 25px;
+    text-decoration: none;
+	
+}a:hover{
+	
+	border-radius:10px;
+	color:red;                                     
+}
+.container{
+	width:100%;
+	max-width:540px;
+	background:white;
+	margin:100px auto 20px;
+	padding:40px 30px 70px;
+	border-radius:10px;
+}
+h1{
+	font-size:80px;
+	text-align: center;
+	color:white;
+	
+
+}
+h2{
+	color:black;
+	display:flex;
+	align-items:center;
+	margin-bottom:20px;
+}
+
+.one{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	background:#edeef0;
+	border-radius:30px;
+	padding-left:20px;
+	margin-bottom: 25px;
+}
+input{
+     flex:1;
+     border:none;
+     outline:none;
+     background:transparent;
+     padding:10px;
+     font-weight: 14px;
+}
+button{
+	border:none;
+     outline:none;
+     padding:16px 50px;
+     background:orange;
+     color:black;
+     font-size: 15px;
+}
+ul li{
+	list-style: none;
+	font-size: 17px;
+	padding:12px 8px 12px 50px;
+	user-select:none;
+	cursor:pointer;
+	position:relative;
+}
+ul li::before{
+	content:'';
+	position:absolute;
+	height:28px;
+    width:28px;
+	border-radius: 50%;
+	background-image: url(img1.jpg);
+    background-size:cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+ul li.two{
+	color:#555;
+	text-decoration: line-through;
+}
+ul li.two::before{
+	background-image: url(img.jpg);
+}
+ul li span{
+	position:absolute;
+	right:0;
+	top:5px;
+	width:40px;height:40px;
+	font-size:40px;
+	color:red;
+	line-height:40px;
+	text-align:center;
+}
+ul li span:hover{
+	background:#edeef0;
+}
+
+@media screen and (max-width:376px){
+	a{
+		font-size:13px;
+		  padding-inline: 20px;
+	}
+	h1{
+	font-size:50px;
+}
+	.container{
+	width:80%;
+	margin:30px 7px 50px;
+	padding:40px 30px 70px;
+	border-radius:5px;
+}
+button{
+	border:none;
+     outline:none;
+     padding:10px 30px;
+     background:orange;
+     color:black;
+     font-size: 10px;
+}
+}
